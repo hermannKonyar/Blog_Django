@@ -1,0 +1,24 @@
+
+
+
+{% if contexts.has_previous %}
+
+
+<a href="?page=1" id="devam2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">İlk Sayfa</a>
+<a href="?page={{contexts.previous_page_number}}" id="devam2"  class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Önceki</a>
+
+
+{% endif %}
+
+{% if contexts.has_next %}
+
+
+
+
+    <a href="?page={{contexts.next_page_number}}" id="devam2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Sonraki</a>
+    <a href="?page={{contexts.paginator.num_pages}}" id="devam2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Son Sayfa</a>
+
+    
+
+{% endif %}
+

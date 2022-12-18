@@ -1,0 +1,55 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block Title %}
+
+Blog Details
+{% endblock Title %}
+
+{% block Content %}
+
+<br>
+
+
+<div class="container mt-3">
+
+    <div class="row">
+        <div class="col-2">
+            {% include 'partials/_categories.html' %}
+        </div>
+        <div class="col-10">
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class ="img-fluid mt-4" src="{% static 'img/'|add:blog.image %}" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <a href="{% url 'blog_details' blog.id %}">
+                                <h5 class="card-title">{{blog.title}}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock Content %}

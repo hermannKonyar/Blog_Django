@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css_files %}
+
+<link rel="stylesheet" href="{% static 'blog/css/style.css'%}">
+{% endblock css_files %}
+
+
+{% block Title %}
+
+Blogs
+{% endblock Title %}
+
+{% block Content %}
+
+<br>
+
+
+<div class="container mt-3">
+
+    <div class="row">
+        <div class="col-2">
+            {% include 'partials/_categories.html' %}
+        </div>
+        <div class="col-10">
+            
+            {% for blog in blogs %}
+            {% if blog.isActive %}
+            {% include 'blog/partials/_tarifler.html' %}
+            {% endif %}
+            
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+{% endblock Content %}
+    

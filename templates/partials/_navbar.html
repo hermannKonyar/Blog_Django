@@ -1,0 +1,56 @@
+{% load static %}
+
+<nav
+  class="navbar navbar-expand-lg navbar-light yazı-tipi"
+  style="background-color: #5F8D4E"
+>
+  <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      style="font-family: 'Lobster Two', cursive !important"
+      href="{% url 'home' %}"
+      ><img src="{% static 'img/olive.png'%}" alt="logo" width="40" height="40" class="rounded-circle d-inline-block "> Mervenin Blogu</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'home' %}"
+            >Ana Sayfa</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blogs' %}">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blogs'  %}">Tarifler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'hakkimda' %}">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="patreon.com/user?u=84066785">Destek</a>
+        </li>
+      </ul>
+      {% comment %} <form class="d-flex">
+        <input
+          class="form-control me-3"
+          type="search"
+          placeholder="Ara"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-light btn-sm" type="submit">Ara</button>
+      </form> {% endcomment %}
+    </div>
+  </div>
+</nav>

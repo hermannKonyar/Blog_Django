@@ -1,0 +1,178 @@
+                                                                .navbar li {
+                                                                    font-family: 'Lobster Two', cursive !important;
+                                                                }
+                                                                
+                                                                .navbar-light .navbar-brand {
+                                                                    font-family: 'Lobster Two', cursive !important;
+                                                                }
+                                                                
+                                                                nav a {
+                                                                    color: #fff!important;
+                                                                    font-family: 'Lobster Two', cursive !important;
+                                                                }
+                                                                
+                                                                .navbar-default {
+                                                                    font-family: 'Lobster Two', cursive !important;
+                                                                }
+                                                                
+                                                                .carousel-inner>.item>img,
+                                                                .carousel-inner>.item>a>img {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                * {
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    box-sizing: border-box;
+                                                                }
+                                                                
+                                                                h2 {
+                                                                    font-family: 'Oswald', sans-serif;
+                                                                    color: #212121;
+                                                                    font-size: 30px;
+                                                                    font-weight: bold;
+                                                                    padding-left: 150px;
+                                                                    margin-top: 50px;
+                                                                }
+                                                                
+                                                                .pagination {
+                                                                    text-align: center;
+                                                                    margin: 30px 30px 60px;
+                                                                    user-select: none;
+                                                                }
+                                                                
+                                                                .pagination li {
+                                                                    display: inline-block;
+                                                                    margin: 5px;
+                                                                    box-shadow: 0 5px rgb(1 1 1/10%);
+                                                                }
+                                                                
+                                                                .pagination li a {
+                                                                    color: #fff;
+                                                                    text-decoration: none;
+                                                                    font-size: 1.2em;
+                                                                    line-height: 45px;
+                                                                }
+                                                                
+                                                                .previous-page,
+                                                                .next-page {
+                                                                    background: #0AB1CE;
+                                                                    width: 80px;
+                                                                    border-radius: 45px;
+                                                                    cursor: pointer;
+                                                                    transition: 0.3s ease;
+                                                                }
+                                                                
+                                                                .previous-page:hover {
+                                                                    transform: translateX(-5px);
+                                                                }
+                                                                
+                                                                .next-page:hover {
+                                                                    transform: translateX(5px);
+                                                                }
+                                                                
+                                                                .current-page,
+                                                                .dots {
+                                                                    background: #ccc;
+                                                                    width: 45px;
+                                                                    border-radius: 50%;
+                                                                    cursor: pointer;
+                                                                }
+                                                                
+                                                                .active {
+                                                                    background: #0AB1CE;
+                                                                }
+                                                                
+                                                                .disable {
+                                                                    background: #ccc;
+                                                                }
+                                                                
+                                                                .title {
+                                                                    color: grey;
+                                                                    font-size: 18px;
+                                                                }
+                                                                
+                                                                button {
+                                                                    border: none;
+                                                                    outline: 0;
+                                                                    display: inline-block;
+                                                                    padding: 8px;
+                                                                    color: white;
+                                                                    background-color: #000;
+                                                                    text-align: center;
+                                                                    cursor: pointer;
+                                                                    width: 100%;
+                                                                    font-size: 18px;
+                                                                }
+                                                                
+                                                                a {
+                                                                    text-decoration: none !important;
+                                                                    font-size: 22px!important;
+                                                                    color: rgb(116, 76, 174) !important;
+                                                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+                                                                }
+                                                                
+                                                                button:hover,
+                                                                a:hover {
+                                                                    opacity: 0.7;
+                                                                }
+                                                                
+                                                                .meraba {
+                                                                    display: flex;
+                                                                    flex-wrap: wrap;
+                                                                    gap: 70px;
+                                                                }
+                                                                
+                                                                .meraba2 {
+                                                                    width: 500px;
+                                                                }
+                                                                
+                                                                #hello {
+                                                                    overflow: hidden;
+                                                                }
+                                                                
+                                                                #devam {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    color: #fff !important;
+                                                                    background-color: #5F8D4E;
+                                                                }
+                                                                
+                                                                @media screen and (min-width: 0px) and (max-width: 1024px) {
+                                                                    #hello {
+                                                                        display: none;
+                                                                    }
+                                                                }
+                                                                
+                                                                .multi-line {
+                                                                    white-space: pre-wrap;
+                                                                }
+                                                                
+                                                                h1 {
+                                                                    font-family: 'Lobster Two', cursive !important;
+                                                                }
+                                                                
+                                                                #canim {
+                                                                    color: #fff !important;
+                                                                }
+                                                                
+                                                                pre {
+                                                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+                                                                    font-size: large !important;
+                                                                }
+                                                                
+                                                                #devam2 {
+                                                                    align-items: center !important;
+                                                                    color: #fff !important;
+                                                                    background-color: #5F8D4E;
+                                                                    display: flex;
+                                                                    justify-content: center !important;
+                                                                }
+                                                                
+                                                                #flexi {
+                                                                    color: #fff !important;
+                                                                    display: flex !important;
+                                                                    justify-content: center !important;
+                                                                    gap: 30px;
+                                                                }

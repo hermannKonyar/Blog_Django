@@ -1,0 +1,88 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css_files %}
+
+<link rel="stylesheet" href="{% static 'blog/css/style.css'%}">
+{% endblock css_files %}
+
+
+{% block Title %}
+
+Blog
+{% endblock Title %}
+
+{% block Content %}
+
+<br>
+
+
+<div class="container mt-3">
+
+    <div class="row">
+        <div class="col-2">
+            {% include 'partials/_categories.html' %}
+        </div>
+        <div class="col-10">
+            
+            {% for blog in contexts.object_list %}
+            {% if blog.isActive %}
+            {% include 'blog/partials/_blogs.html' %}
+            {% endif %}
+            
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div id="flexi">
+    
+        
+            {% include 'partials/_pagination.html' %}
+        
+</div>
+
+
+<br>
+<br>
+
+<script type="text/javascript">
+
+    function getPageList(totalPages,page,maxLength){
+        function range(start,end){
+            return Array.from(Array(end-start+1),(_,i)=> i+start);
+        }
+        var sideWidth=maxLength < 9?1:2;
+        var leftWidth = (maxLength-sideWidth*2-3)>>1;
+        var righttWidth = (maxLength-sideWidth*2-3)>>1;
+
+
+        if(totalPages<=maxLength){
+            return range(1,totalPages);
+        }
+
+        if(page<=maxLength-sideWidth-1-righttWidth){
+            return range(1,maxLength-sideWidth-1).concat(0,range(totalPages-sideWidth+1,totalPages));
+        }
+
+        if(page>=totalPages-sideWidth-1-righttWidth){
+            return range(1,sideWidth).concat(0,range(totalPages-sideWidth-1-righttWidth-leftWidth,totalPages));
+        }
+
+        return range(1,sideWidth).concat(0,range(page-leftWidth,page+righttWidth),0,range(totalPages-sideWidth+1,totalPages));
+
+    }
+
+    $(function(){
+        var numberOfItems=$("")
+    });
+
+</script>
+
+{% endblock Content %}
+    
